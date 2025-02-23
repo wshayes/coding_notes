@@ -18,3 +18,9 @@
 These docs are not indexed correctly by Cursor
 - [Quarto](https://quarto.org/docs/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
+
+## Notes
+- [Repomix](https://github.com/yamadashy/repomix) - A tool to help you summarize your github repo for AI tools (e.g. [Reddit post](https://www.reddit.com/r/cursor/comments/1ivhb0b/comment/me6e56d/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button))
+
+
+
