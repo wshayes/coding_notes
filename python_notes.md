@@ -74,4 +74,7 @@ Microsoft Graph API
         return decorator
     ```
     
--
+## Modules
+
+### Data Related
+- [srsly - json/yaml/etc serialization from Ines at ExplosionAI](https://pypi.org/project/srsly/)
