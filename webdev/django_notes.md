@@ -1,5 +1,7 @@
 # Django Notes
 
+See for more Django Notes - https://github.com/wshayes/django_templates
+
 ### [**Deploying a Django project to AWS using GitHub Actions and CodeDeploy Blue/Green Deployment + EC2**](https://github.com/Andrew-Chen-Wang/cookiecutter-django-ec2-github) (Works w/ Flask/FastAPI/Rails)
 
 ### [**Django Model Fields With Attributes**](https://jacobian.org/til/django-model-fields-with-attributes/?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_185) - Jacob Kaplan-Moss
@@ -34,6 +36,10 @@
 
 [Django useful commands](https://www.notion.so/Django-useful-commands-17a54dbbea414cc0a6a5fd0913cf1862?pvs=21)
 
+## Useful modules
+- [Django Axes](https://medium.com/django-unleashed/enhancing-django-security-prevent-brute-force-attacks-with-django-axes-6cf50a15711d) - blocks bad login attempts
+
+- 
 ## Tips and Code Snippets
 
 Using partials for components
