@@ -4,6 +4,8 @@ See for more Django Notes - https://github.com/wshayes/django_templates
 
 ### [**Deploying a Django project to AWS using GitHub Actions and CodeDeploy Blue/Green Deployment + EC2**](https://github.com/Andrew-Chen-Wang/cookiecutter-django-ec2-github) (Works w/ Flask/FastAPI/Rails)
 
+
+
 ### [**Django Model Fields With Attributes**](https://jacobian.org/til/django-model-fields-with-attributes/?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_185) - Jacob Kaplan-Moss
 
 ### [Django shell colors: dev, staging or production?](https://django.wtf/blog/django-shell-colors-by-development-environment/?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_183)
@@ -25,6 +27,8 @@ See for more Django Notes - https://github.com/wshayes/django_templates
 - [Django Wednesday - Codemy.com](https://www.youtube.com/playlist?list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy)
 - [Bugbytes](https://www.bugbytes.io/)
 - [Falco](https://falco.oluwatobi.dev/)
+- [Optimizing Django Docker Builds with Astral’s `uv` ](https://rob.cogit8.org/posts/optimizing-django-docker-builds-with-astrals-uv/)
+  
 
 ## Example projects
 

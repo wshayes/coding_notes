@@ -1,0 +1,173 @@
+# Streamlit Best Practices
+
+## Description
+This rule set enforces best practices for Streamlit applications, focusing on performance, maintainability, and user experience.
+
+## Rules
+
+### Use st.cache_data and st.cache_resource Appropriately
+✅ Good:Right click to open menu
+```python
+@st.cache_data
+def load_data():
+    df = pd.read_csv("large_file.csv")
+    return df
+
+@st.cache_resource
+def init_ml_model():
+    return RandomForestClassifier()
+```
+
+❌ Bad:
+```python
+def load_data():
+    # Inefficient: Data will be reloaded on every rerun
+    df = pd.read_csv("large_file.csv")
+    return df
+```
+
+### Organize App Layout with Containers
+✅ Good:
+```python
+def main():
+    with st.container():
+        st.title("My App")
+        
+    col1, col2 = st.columns(2)
+    with col1:
+        st.header("Section 1")
+    with col2:
+        st.header("Section 2")
+```
+
+❌ Bad:
+```python
+def main():
+    st.title("My App")
+    # Avoid floating elements without proper container structure
+    st.header("Section 1")
+    st.header("Section 2")
+```
+
+### Use Session State for App State Management
+✅ Good:
+```python
+if "counter" not in st.session_state:
+    st.session_state.counter = 0
+
+def increment():
+    st.session_state.counter += 1
+```
+
+❌ Bad:
+```python
+# Global variables are reset on each rerun
+counter = 0
+def increment():
+    global counter
+    counter += 1
+```
+
+### Implement Error Handling
+✅ Good:
+```python
+try:
+    data = process_data()
+    st.success("Data processed successfully!")
+except Exception as e:
+    st.error(f"An error occurred: {str(e)}")
+```
+
+❌ Bad:
+```python
+# No error handling
+data = process_data()
+st.write(data)
+```
+
+### Use Progress Indicators
+✅ Good:
+```python
+with st.spinner("Processing..."):
+    # Long running operation
+    result = complex_operation()
+st.success("Done!")
+```
+
+❌ Bad:
+```python
+# User has no feedback during operation
+result = complex_operation()
+```
+
+### Optimize Performance with Lazy Loading
+✅ Good:
+```python
+@st.cache_data
+def load_section_data(section):
+    if section == "analytics":
+        return load_analytics()
+    return None
+
+if st.sidebar.button("Show Analytics"):
+    data = load_section_data("analytics")
+```
+
+❌ Bad:
+```python
+# Loading all data upfront
+all_data = load_all_sections()
+if st.sidebar.button("Show Analytics"):
+    show_analytics(all_data)
+```
+
+## Additional Guidelines
+
+1. Use meaningful variable names and comments
+2. Structure your app with clear sections using st.sidebar for navigation
+3. Implement responsive layouts using st.columns and st.expander
+4. Use appropriate input widgets for data collection
+5. Include proper documentation and help text
+6. Implement data validation before processing
+7. Use st.set_page_config() at the start of your app
+8. Follow the principle of progressive disclosure
+
+## Common Patterns
+
+### App Configuration
+```python
+st.set_page_config(
+    page_title="My Streamlit App",
+    page_icon="🚀",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+```
+
+### Multi-page Navigation
+```python
+def navigation():
+    pages = {
+        "Home": home_page,
+        "Analysis": analysis_page,
+        "About": about_page
+    }
+    page = st.sidebar.selectbox("Navigate to", list(pages.keys()))
+    pages[page]()
+```
+
+### Data Loading Pattern
+```python
+@st.cache_data
+def load_data(url: str) -> pd.DataFrame:
+    try:
+        return pd.read_csv(url)
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
+        return None
+```
+
+## References
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Streamlit Performance](https://docs.streamlit.io/library/advanced-features/caching)
+- [Streamlit Components](https://docs.streamlit.io/library/components) 

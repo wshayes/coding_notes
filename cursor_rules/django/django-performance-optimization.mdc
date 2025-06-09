@@ -1,0 +1,11 @@
+---
+description: Focus on performance optimization techniques in all files of the project.
+globs: **/*.*
+alwaysApply: false
+---
+- Optimize query performance using Django ORM's select_related and prefetch_related for related object fetching.
+- Use Django’s cache framework with backend support using Postgres to reduce database load.
+- Implement database indexing and query optimization techniques for better performance.
+- Use asynchronous views and background tasks using Procrastinate and Postgres for I/O-bound or long-running operations.
+- Optimize static file handling with Django’s static file management system using WhiteNoise.
+- Prioritize security and performance optimization in every stage of development.

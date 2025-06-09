@@ -31,6 +31,18 @@ Microsoft Graph API
 - Textual - https://textual.textualize.io/
 - Beeware Briefcase - [https://beeware.org](https://beeware.org/)
 
+## UV Notes
+
+- Using `uv` to add dependencies into a script - https://thisdavej.com/share-python-scripts-like-a-pro-uv-and-pep-723-for-easy-deployment/
+
+```
+uv add --script wordlookup.py httpx
+
+# Use the following shebang to run the script
+#!/usr/bin/env -S uv run --quiet
+
+```
+
 ## Tips
 
 - Merging multiple decorators - https://stackoverflow.com/a/5409569/886938 and https://adamj.eu/tech/2020/04/01/how-to-combine-two-python-decorators/

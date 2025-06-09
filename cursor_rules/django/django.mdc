@@ -1,4 +1,3 @@
-
 ---
 description: Django
 globs: **/*.py, **/*.html
@@ -31,8 +30,8 @@ Error Handling and Validation
 Dependencies
 - Django
 - Django REST Framework, aka DRF (for API development)
-- Celery (for background tasks)
-- Redis (for caching and task queues)
+- Procrastinate (for background tasks)
+- Postgres (for caching and task queues)
 - PostgreSQL or MySQL (preferred databases for production)
 
 Dependencies

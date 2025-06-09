@@ -1,0 +1,10 @@
+---
+description: Configurations for Django settings file with the list of dependencies and conventions.
+globs: **/settings.py
+alwaysApply: false
+---
+- Django
+- Django REST Framework (for API development)
+- Procrastinate (for background tasks)
+- Postgres (for caching and task queues)
+- PostgreSQL (preferred databases for production)

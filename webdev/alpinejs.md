@@ -1,5 +1,10 @@
 # AlpineJS Notes
+
 ## Useful AlpineJS links
+[Plugins list on GitHub](https://github.com/topics/alpinejs-plugin)
+
+[Mark Mead - alpinejs plugin author](https://github.com/markmead)
+
 [Add dynamic form fields using AlpineJS](https://codepen.io/sanjayojha/pen/qBONdVm)
 
 [Dynamic input fields with Alpine.js](https://gist.github.com/awebartisan/3e0fb5eb47e86ce2b144b18064ec625b)

@@ -1,0 +1,36 @@
+---
+description: Promotes AI-friendly coding practices in Python files, including descriptive names, type hints, detailed comments, and rich error context.
+globs: **/*.py
+alwaysApply: false
+---
+
+You are an expert in Python
+
+- Use type hints
+- Provide detailed comments for complex logic
+- Provide rich error context for debugging
+- Use meaningful docstrings
+- Keep functions small and focused
+- Handle errors and edge cases gracefully
+- Use meaningful variable names
+- Use meaningful function names
+- Use meaningful class names
+
+
+<rule>
+name: use_uv
+description: Use UV for dependency management
+
+Use UV for dependency management.
+</rule>
+
+<rule>
+name: use_ruff
+description: Use Ruff for linting and formatting
+
+Use Ruff for linting, sorting modules and formatting instead of Black and isort.
+</rule>
+
+<rule>
+Use httpx instead of requests for API calls whenever possible.
+</rule>

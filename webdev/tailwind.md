@@ -1,4 +1,12 @@
-## Tailwind Tips
+# Tailwind
+
+## Useful links
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Mark Mead - tailwind components author](https://github.com/markmead)
+
+
+## Tips
 
 - https://design2tailwind.com/blog/tailwindcss-background-image/
 - Automatic concentric border radii with Tailwind - https://twitter.com/adamwathan/status/1710978528684957697
